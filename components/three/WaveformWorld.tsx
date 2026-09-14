@@ -53,7 +53,7 @@ function WorldFallback({ subtle }: { subtle: boolean }) {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 50% at 50% 30%, rgba(92,107,61,0.12) 0%, transparent 65%), radial-gradient(ellipse 60% 40% at 50% 80%, rgba(200,176,64,0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse 70% 50% at 50% 30%, rgba(212,204,182,0.12) 0%, transparent 65%), radial-gradient(ellipse 60% 40% at 50% 80%, rgba(212,204,182,0.08) 0%, transparent 70%)",
         }}
       />
       <svg
@@ -64,12 +64,12 @@ function WorldFallback({ subtle }: { subtle: boolean }) {
       >
         <path
           d="M0 80 Q 150 20 300 80 T 600 80 T 900 80 T 1200 80"
-          stroke="rgba(92,107,61,0.35)"
+          stroke="rgba(212,204,182,0.35)"
           strokeWidth="2"
         />
         <path
           d="M0 80 Q 150 130 300 80 T 600 80 T 900 80 T 1200 80"
-          stroke="rgba(200,176,64,0.25)"
+          stroke="rgba(212,204,182,0.25)"
           strokeWidth="1.5"
         />
       </svg>

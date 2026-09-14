@@ -51,7 +51,7 @@ export function CatalogueNowPlaying({ song, isPlaying, embedTrackId, embedStart 
 
   return (
     <div className="showreel-player">
-      <div ref={iframeRef} className="relative w-full max-w-[400px] overflow-hidden rounded-card border border-[rgba(92,107,61,0.2)] bg-black">
+      <div ref={iframeRef} className="relative w-full max-w-[400px] overflow-hidden rounded-card border border-[rgba(212,204,182,0.2)] bg-black">
         <div className="aspect-square w-full">
           {shouldLoad ? (
             <iframe
@@ -117,7 +117,7 @@ export function CatalogueNowPlaying({ song, isPlaying, embedTrackId, embedStart 
           href={spotifyDeepLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-medium text-olive-light underline-offset-4 transition-all duration-300 hover:text-on-dark hover:underline hover:shadow-[0_4px_24px_rgba(92,107,61,0.4)] md:text-base"
+          className="text-sm font-medium text-olive-light underline-offset-4 transition-all duration-300 hover:text-on-dark hover:underline hover:shadow-[0_4px_24px_rgba(212,204,182,0.4)] md:text-base"
         >
           Listen on Spotify ↗
         </a>

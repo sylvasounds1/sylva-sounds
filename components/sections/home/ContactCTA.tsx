@@ -33,7 +33,7 @@ export function ContactCTA() {
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(92,107,61,0.18) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(212,204,182,0.18) 0%, transparent 70%)",
         }}
         aria-hidden
       />
@@ -53,7 +53,7 @@ export function ContactCTA() {
         <div data-cta className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-olive-core px-8 py-4 text-sm font-semibold tracking-wide text-surface-01 transition-all duration-300 hover:bg-olive-dark hover:shadow-[0_4px_24px_rgba(92,107,61,0.4)] active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-olive-core px-8 py-4 text-sm font-semibold tracking-wide text-surface-01 transition-all duration-300 hover:bg-olive-dark hover:shadow-[0_4px_24px_rgba(212,204,182,0.4)] active:scale-[0.98]"
           >
             Contact Us
           </Link>

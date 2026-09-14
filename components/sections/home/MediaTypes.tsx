@@ -68,7 +68,7 @@ export function MediaTypes() {
                   .map((type) => (
                     <li
                       key={type}
-                      className="rounded-lg border border-beige-deep/80 bg-surface-01 px-4 py-3.5 text-base font-medium text-text-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-olive-core hover:text-olive-dark hover:shadow-[0_0_18px_rgba(92,107,61,0.22)] md:text-lg"
+                      className="rounded-lg border border-beige-deep/80 bg-surface-01 px-4 py-3.5 text-base font-medium text-text-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-olive-core hover:text-olive-dark hover:shadow-[0_0_18px_rgba(212,204,182,0.22)] md:text-lg"
                     >
                       {type}
                     </li>

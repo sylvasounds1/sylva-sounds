@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/lib/data";
 
 const footerLinks = {
@@ -19,7 +20,22 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-3xl font-semibold text-on-dark">{site.name}</p>
+            <Link
+              href="/"
+              aria-label="SYLVA SOUNDS — home"
+              className="inline-flex items-center"
+              style={{ background: "transparent" }}
+            >
+              <Image
+                src="/logos/sylva-logo.png"
+                alt="SYLVA SOUNDS"
+                width={39}
+                height={50}
+                loading="lazy"
+                className="site-logo-img h-12 w-auto object-contain"
+                style={{ background: "transparent" }}
+              />
+            </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-on-dark-dim">
               Music, sound design and audio post-production for film, OTT, brands, and digital media.
               Based in Mumbai, working globally.
@@ -28,7 +44,7 @@ export function Footer() {
               {[3, 6, 4, 8, 5, 7, 4, 6, 3, 5, 7, 4].map((h, i) => (
                 <div
                   key={i}
-                  className="waveform-bar w-[3px] rounded-sm bg-olive-core"
+                  className="waveform-bar w-[3px] rounded-sm bg-champagne"
                   style={{
                     height: h * 2,
                     opacity: 0.5,

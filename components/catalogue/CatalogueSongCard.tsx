@@ -28,7 +28,7 @@ export function CatalogueSongCard({ song, isActive, isPlaying, onSelect }: Catal
       onClick={() => onSelect(song.id)}
       className={`group relative flex w-full items-center gap-4 overflow-hidden rounded-card border p-4 text-left transition-all duration-300 ${
         isActive
-          ? "border-olive-core bg-surface-01 shadow-[0_8px_30px_rgba(92,107,61,0.15)]"
+          ? "border-olive-core bg-surface-01 shadow-[0_8px_30px_rgba(212,204,182,0.15)]"
           : "border-beige-deep bg-bg-primary hover:border-olive-muted hover:bg-surface-01"
       }`}
       whileHover={{ y: -2 }}

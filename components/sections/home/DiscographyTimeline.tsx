@@ -95,7 +95,7 @@ export function DiscographyTimeline() {
         <h2 className="heading-display mb-10 font-semibold leading-[0.96] text-on-dark" style={{ fontSize: "clamp(2.6rem, 9vw, 4rem)" }}>
           Selected Releases
         </h2>
-        <ul className="relative border-l border-[rgba(240,236,227,0.18)] pl-6">
+        <ul className="relative border-l border-[rgba(245,241,232,0.18)] pl-6">
           {discography.map((d, i) => (
             <li key={i} className="relative mb-8">
               <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-olive-core" />
@@ -123,7 +123,7 @@ export function DiscographyTimeline() {
           </div>
 
           <div className="relative">
-            <div className="pointer-events-none absolute left-0 right-0 top-[46px] h-px bg-[rgba(240,236,227,0.14)]" />
+            <div className="pointer-events-none absolute left-0 right-0 top-[46px] h-px bg-[rgba(245,241,232,0.14)]" />
             <div className="disco-line-fill pointer-events-none absolute left-0 right-0 top-[46px] h-px bg-olive-core" style={{ transform: "scaleX(0)" }} />
 
             <div ref={trackRef} className="flex items-start gap-16 pl-[max(2rem,calc((100vw-80rem)/2+2rem))] pr-[14vw] will-change-transform">

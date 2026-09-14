@@ -56,7 +56,7 @@ export function CreditsSection() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(244,239,230,0.92) 0%, rgba(244,239,230,0.7) 40%, rgba(244,239,230,0.3) 75%, transparent 100%)" }} />
+      <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(11,11,11,0.92) 0%, rgba(11,11,11,0.7) 40%, rgba(11,11,11,0.3) 75%, transparent 100%)" }} />
 
       <div className="credits-monument relative z-10 mx-auto max-w-4xl px-6 text-center lg:px-8">
         <p className="label-mono mb-5 text-base md:text-lg">Credits</p>

@@ -1,21 +1,32 @@
 :root {
-  --bg-primary: #f4efe6;
-  --bg-secondary: #ebe4d8;
-  --bg-warm: #e8dfd0;
-  --surface-01: #faf7f2;
-  --surface-02: #f0e9de;
-  --olive-core: #5c6b3d;
-  --olive-dark: #3d4a2f;
-  --olive-muted: #6b7a4a;
-  --olive-light: #8a9a6b;
-  --olive-glow: rgba(92, 107, 61, 0.12);
-  --beige-deep: #d9cfc0;
-  --text-primary: #2c2a26;
-  --text-secondary: #4f4942;
-  --text-muted: #625b52;
-  --accent-warm: #8b7355;
-  --glass-bg: rgba(250, 247, 242, 0.85);
-  --glass-border: rgba(92, 107, 61, 0.15);
+  /* ─── Champagne / black brand system ─── */
+  --champagne: #d4ccb6;
+  --champagne-light: #e5dec9;
+  --champagne-muted: #c4b89a;
+  --champagne-glow: rgba(212, 204, 182, 0.14);
+  --black: #0b0b0b;
+  --black-surface: #111111;
+
+  /* Light-system slots remapped to dark so existing classes go black + champagne.
+     Keeps every bg, surface and text utility working without a full rewrite. */
+  --bg-primary: #0b0b0b;
+  --bg-secondary: #111111;
+  --bg-warm: #141311;
+  --surface-01: #111111;
+  --surface-02: #1a1917;
+  /* Olive aliases to champagne (backward compat for bg-olive and text-olive classes) */
+  --olive-core: #d4ccb6;
+  --olive-dark: #e5dec9;
+  --olive-muted: #c4b89a;
+  --olive-light: #e5dec9;
+  --olive-glow: rgba(212, 204, 182, 0.14);
+  --beige-deep: rgba(212, 204, 182, 0.18);
+  --text-primary: #f5f1e8;
+  --text-secondary: rgba(245, 241, 232, 0.82);
+  --text-muted: rgba(245, 241, 232, 0.6);
+  --accent-warm: #d4ccb6;
+  --glass-bg: rgba(17, 17, 17, 0.85);
+  --glass-border: rgba(212, 204, 182, 0.18);
   --font-display: var(--font-display-serif), Georgia, serif;
   --font-body: var(--font-body-sans), system-ui, sans-serif;
   --radius-card: 12px;
@@ -23,13 +34,13 @@
   --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Dark zone — hero, logos, CTA, footer */
-  --dark-bg: #0b0f07;
-  --dark-surface: #121a08;
-  --dark-border: rgba(92, 107, 61, 0.16);
-  --on-dark: #f0ece3;
-  --on-dark-dim: rgba(240, 236, 227, 0.68);
-  --on-dark-label: rgba(240, 236, 227, 0.62);
-  --on-dark-accent: #c8b040;
+  --dark-bg: #0b0b0b;
+  --dark-surface: #111111;
+  --dark-border: rgba(212, 204, 182, 0.18);
+  --on-dark: #f5f1e8;
+  --on-dark-dim: rgba(245, 241, 232, 0.68);
+  --on-dark-label: rgba(245, 241, 232, 0.62);
+  --on-dark-accent: #d4ccb6;
 
   --section-v: 7rem;
 }
@@ -67,8 +78,8 @@ body {
 }
 
 ::selection {
-  background: var(--olive-core);
-  color: var(--surface-01);
+  background: var(--champagne);
+  color: #0b0b0b;
 }
 
 ::-webkit-scrollbar {
@@ -76,11 +87,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: #0b0b0b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--olive-muted);
+  background: var(--champagne-muted);
   border-radius: 4px;
 }
 
@@ -93,7 +104,7 @@ body {
     background: var(--surface-01);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-card);
-    box-shadow: 0 4px 24px rgba(44, 42, 38, 0.06);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
   }
 
   .gradient-warm {
@@ -153,7 +164,7 @@ body {
 
   /* Translucent "veils" let the cinematic sound world show through sections */
   .veil-warm {
-    background: rgba(244, 239, 230, 0.82);
+    background: rgba(11, 11, 11, 0.82);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     will-change: transform;
@@ -161,7 +172,7 @@ body {
   }
 
   .veil-surface {
-    background: rgba(250, 247, 242, 0.78);
+    background: rgba(17, 17, 17, 0.78);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     will-change: transform;
@@ -169,7 +180,7 @@ body {
   }
 
   .veil-dark {
-    background: rgba(11, 15, 7, 0.74);
+    background: rgba(11, 11, 11, 0.74);
     color: var(--on-dark);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
@@ -215,6 +226,26 @@ body {
 
   .group:hover .work-card-title::after {
     transform: scaleX(1);
+  }
+
+  /* Champagne primary CTA — black on champagne, champagne on black */
+  .btn-champagne {
+    background: var(--champagne);
+    color: #0b0b0b;
+    transition:
+      background 0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .btn-champagne:hover {
+    background: var(--champagne-light);
+    box-shadow: 0 4px 32px rgba(212, 204, 182, 0.35);
+  }
+
+  .site-logo-img {
+    background: transparent !important;
+    object-fit: contain;
   }
 }
 

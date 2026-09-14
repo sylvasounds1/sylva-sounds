@@ -14,6 +14,10 @@ const config: Config = {
         "bg-warm": "var(--bg-warm)",
         "surface-01": "var(--surface-01)",
         "surface-02": "var(--surface-02)",
+        champagne: "var(--champagne)",
+        "champagne-light": "var(--champagne-light)",
+        "champagne-muted": "var(--champagne-muted)",
+        /* Olive aliases → champagne (backward compat, do not remove yet) */
         "olive-core": "var(--olive-core)",
         "olive-dark": "var(--olive-dark)",
         "olive-muted": "var(--olive-muted)",

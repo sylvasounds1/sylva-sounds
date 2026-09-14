@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { displayFont, bodyFont } from "@/lib/fonts";
 import "@/styles/globals.css";
 import "@/styles/animations.css";
@@ -18,17 +18,48 @@ export const metadata: Metadata = {
   },
   description: site.description,
   metadataBase: new URL("https://sylvasounds.com"),
+  icons: {
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      { rel: "icon", url: "/icon-192.png", sizes: "192x192" },
+      { rel: "icon", url: "/icon-512.png", sizes: "512x512" },
+    ],
+  },
   openGraph: {
     title: site.name,
     description: site.description,
     type: "website",
     locale: "en_US",
     siteName: site.name,
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SYLVA SOUNDS — From Silence to Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.name,
+    description: site.description,
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0B0B0B",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -64,7 +64,7 @@ export function ServicesOverview() {
               <a
                 key={cat.id}
                 href="/services"
-                className="svc-card group flex flex-col rounded-card border border-beige-deep bg-surface-01 p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-olive-core hover:shadow-[0_12px_40px_rgba(92,107,61,0.18)] md:p-10"
+                className="svc-card group flex flex-col rounded-card border border-beige-deep bg-surface-01 p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-olive-core hover:shadow-[0_12px_40px_rgba(212,204,182,0.18)] md:p-10"
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl border border-beige-deep bg-bg-primary text-olive-core transition-colors group-hover:border-olive-core/40 group-hover:bg-olive-core/10">
                   <Icon size={28} strokeWidth={1.5} />
