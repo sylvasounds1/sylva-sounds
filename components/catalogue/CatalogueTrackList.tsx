@@ -59,7 +59,7 @@ export function CatalogueTrackList({ songs, activeId, onSelect, isPlaying }: Cat
             <button
               type="button"
               onClick={() => onSelect(song.id)}
-              className="group flex w-full items-center gap-5 border-b border-[rgba(245,241,232,0.1)] py-5 text-left transition-colors"
+              className="group flex w-full items-center gap-5 border-b border-[rgba(240,236,227,0.1)] py-5 text-left transition-colors"
             >
               <span
                 className={`font-mono text-sm tabular-nums transition-colors ${isActive ? "text-on-dark-accent" : "text-on-dark-dim"}`}
@@ -81,7 +81,7 @@ export function CatalogueTrackList({ songs, activeId, onSelect, isPlaying }: Cat
                 className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all ${
                   isActive
                     ? "border-olive-core bg-olive-core text-surface-01"
-                    : "border-[rgba(245,241,232,0.25)] text-on-dark-dim group-hover:border-on-dark"
+                    : "border-[rgba(240,236,227,0.25)] text-on-dark-dim group-hover:border-on-dark"
                 }`}
               >
                 {isActive && isPlaying ? (

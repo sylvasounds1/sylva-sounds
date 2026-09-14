@@ -56,7 +56,7 @@ export function PageHeader({ label, title, subtitle }: PageHeaderProps) {
         className="absolute inset-x-0 bottom-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent, rgba(212,204,182,0.3) 25%, rgba(229,222,201,0.55) 50%, rgba(212,204,182,0.3) 75%, transparent)",
+            "linear-gradient(90deg, transparent, rgba(92,107,61,0.3) 25%, rgba(200,176,64,0.55) 50%, rgba(92,107,61,0.3) 75%, transparent)",
         }}
       />
     </div>

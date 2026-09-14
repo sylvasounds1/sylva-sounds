@@ -5,8 +5,8 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { scrollState } from "@/lib/scrollState";
 
-const OLIVE = new THREE.Color("#D4CCB6");
-const GOLD = new THREE.Color("#E5DEC9");
+const OLIVE = new THREE.Color("#5c6b3d");
+const GOLD = new THREE.Color("#c8b040");
 
 /** A living ribbon of sound: a wide plane displaced by layered sines in a shader. */
 function SoundRibbon() {

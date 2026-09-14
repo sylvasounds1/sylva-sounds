@@ -65,7 +65,7 @@ export function AboutContent() {
       />
 
       {/* Stats */}
-      <section className="about-stats veil-dark border-y border-[rgba(212,204,182,0.2)] px-6 py-14 lg:px-8">
+      <section className="about-stats veil-dark border-y border-[rgba(92,107,61,0.2)] px-6 py-14 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {aboutStudio.stats.map((stat) => (
             <div key={stat.label} className="about-stat text-center lg:text-left">
@@ -96,10 +96,10 @@ export function AboutContent() {
               </p>
             </div>
 
-            <div className="about-reveal relative overflow-hidden rounded-card border border-[rgba(212,204,182,0.15)] bg-surface-01 p-8 md:p-10">
+            <div className="about-reveal relative overflow-hidden rounded-card border border-[rgba(92,107,61,0.15)] bg-surface-01 p-8 md:p-10">
               <div
                 className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full opacity-40"
-                style={{ background: "radial-gradient(circle, rgba(212,204,182,0.35) 0%, transparent 70%)" }}
+                style={{ background: "radial-gradient(circle, rgba(92,107,61,0.35) 0%, transparent 70%)" }}
               />
               <p className="font-display text-2xl font-semibold italic leading-snug text-olive-dark md:text-3xl">
                 &ldquo;Sound is the invisible architecture of emotion.&rdquo;
@@ -135,7 +135,7 @@ export function AboutContent() {
             {aboutStudio.pillars.map((pillar, i) => (
               <div
                 key={pillar.title}
-                className="about-reveal group rounded-card border border-[rgba(212,204,182,0.12)] bg-bg-primary p-8 transition-all duration-300 hover:-translate-y-1 hover:border-olive-muted/40 hover:shadow-lg"
+                className="about-reveal group rounded-card border border-[rgba(92,107,61,0.12)] bg-bg-primary p-8 transition-all duration-300 hover:-translate-y-1 hover:border-olive-muted/40 hover:shadow-lg"
                 style={{ transitionDelay: `${i * 40}ms` }}
               >
                 <span className="font-mono text-sm text-olive-core">0{i + 1}</span>
@@ -182,7 +182,7 @@ export function AboutContent() {
                   {category.items.slice(0, 5).map((item) => (
                     <li
                       key={item}
-                      className="rounded-pill border border-[rgba(212,204,182,0.15)] bg-surface-01 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-olive-muted transition-colors group-hover:border-olive-muted/30 group-hover:text-olive-core"
+                      className="rounded-pill border border-[rgba(92,107,61,0.15)] bg-surface-01 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-olive-muted transition-colors group-hover:border-olive-muted/30 group-hover:text-olive-core"
                     >
                       {item}
                     </li>
@@ -200,7 +200,7 @@ export function AboutContent() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 60% 50% at 50% 100%, rgba(212,204,182,0.12) 0%, transparent 70%)",
+              "radial-gradient(ellipse 60% 50% at 50% 100%, rgba(92,107,61,0.12) 0%, transparent 70%)",
           }}
         />
         <div className="about-reveal relative mx-auto max-w-2xl">

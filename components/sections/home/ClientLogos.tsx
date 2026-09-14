@@ -150,13 +150,13 @@ export function ClientLogos() {
     <section
       ref={sectionRef}
       data-stage="sound"
-      className="veil-dark relative overflow-hidden border-b border-[rgba(212,204,182,0.18)] py-14 md:py-20 lg:py-24"
+      className="veil-dark relative overflow-hidden border-b border-[rgba(92,107,61,0.18)] py-14 md:py-20 lg:py-24"
     >
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 80% 55% at 50% 40%, rgba(212,204,182,0.12) 0%, transparent 65%)",
+            "radial-gradient(ellipse 80% 55% at 50% 40%, rgba(92,107,61,0.12) 0%, transparent 65%)",
         }}
       />
 
@@ -164,7 +164,7 @@ export function ClientLogos() {
         className="pointer-events-none absolute left-0 right-0 top-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent 0%, rgba(212,204,182,0.35) 50%, transparent 100%)",
+            "linear-gradient(90deg, transparent 0%, rgba(122,154,80,0.35) 50%, transparent 100%)",
         }}
       />
 
@@ -188,7 +188,7 @@ export function ClientLogos() {
       <div className="relative mx-auto max-w-[1320px] px-5 text-center lg:px-6">
         <p
           className="brands-heading label-mono text-sm font-semibold uppercase tracking-[0.22em] md:text-base"
-          style={{ color: "rgba(245, 241, 232, 0.72)" }}
+          style={{ color: "rgba(244, 239, 230, 0.72)" }}
         >
           Brands We&apos;ve Served
         </p>

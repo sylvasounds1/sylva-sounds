@@ -51,17 +51,17 @@ export default function PortfolioPage() {
                       style={{ transition: "transform 700ms cubic-bezier(0.4,0,0.2,1)" }}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0b]/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f07]/80 via-transparent to-transparent" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       {project.videoUrl && (
-                        <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[#f5f1e8]/40" style={{ background: "rgba(212,204,182,0.7)" }}>
-                          <Play size={20} className="ml-0.5 text-[#0b0b0b]" />
+                        <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[#f0ece3]/40" style={{ background: "rgba(92,107,61,0.7)" }}>
+                          <Play size={20} className="ml-0.5 text-[#f0ece3]" />
                         </span>
                       )}
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#f5f1e8] mb-1">{project.type}</p>
-                      <h3 className="font-display text-lg font-semibold text-[#f5f1e8]">{project.title}</h3>
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#f0ece3] mb-1">{project.type}</p>
+                      <h3 className="font-display text-lg font-semibold text-[#f0ece3]">{project.title}</h3>
                     </div>
                   </div>
                 </div>

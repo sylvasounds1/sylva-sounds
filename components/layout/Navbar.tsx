@@ -16,9 +16,12 @@ const navLinks = [
 
 export function Navbar() {
   const pathname = usePathname();
+  const isHome = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const ticking = useRef(false);
+
+  const overHero = isHome && !scrolled;
 
   useEffect(() => {
     const onScroll = () => {
@@ -47,38 +50,54 @@ export function Navbar() {
   }, [mobileOpen]);
 
   const linkClass = (active: boolean) =>
-    active ? "text-on-dark" : "text-on-dark-dim hover:text-on-dark";
-  const menuClass = "text-on-dark";
+    overHero
+      ? active
+        ? "text-olive-dark"
+        : "text-text-primary/85 hover:text-text-primary"
+      : active
+        ? "text-on-dark"
+        : "text-on-dark-dim hover:text-on-dark";
+  const menuClass = overHero ? "text-text-primary" : "text-on-dark";
 
   return (
     <>
       <header
         className={clsx(
           "fixed left-0 right-0 top-0 z-[9999] transition-[background,backdrop-filter,border,padding] duration-300",
-          scrolled ? "border-b py-3" : "py-4"
+          overHero ? "py-5" : "border-b py-3"
         )}
         style={{
-          background: "color-mix(in srgb, var(--dark-bg) 97%, transparent)",
-          backdropFilter: "blur(12px)",
-          borderColor: "var(--dark-border)",
+          background: overHero
+            ? "linear-gradient(to bottom, rgba(244,239,230,0.9), rgba(244,239,230,0.56), transparent)"
+            : "color-mix(in srgb, var(--dark-bg) 97%, transparent)",
+          backdropFilter: overHero ? "none" : "blur(12px)",
+          borderColor: overHero ? "transparent" : "var(--dark-border)",
         }}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
           <Link
             href="/"
             aria-label="SYLVA SOUNDS — home"
-            className="inline-flex items-center transition-opacity hover:opacity-85"
+            className="flex items-center gap-2.5 transition-opacity hover:opacity-80"
             style={{ background: "transparent" }}
           >
             <Image
-              src="/logos/sylva-logo.png"
+              src={overHero ? "/logos/sylva-mark-on-light.png" : "/logos/sylva-mark-on-dark.png"}
               alt="SYLVA SOUNDS"
-              width={34}
-              height={44}
+              width={32}
+              height={42}
               priority
-              className="site-logo-img h-10 w-auto object-contain md:h-11"
+              className="h-8 w-auto object-contain md:h-9"
               style={{ background: "transparent" }}
             />
+            <span
+              className={clsx(
+                "font-display text-xl font-semibold tracking-tight md:text-2xl",
+                overHero ? "text-text-primary" : "text-on-dark"
+              )}
+            >
+              SYLVA SOUNDS
+            </span>
           </Link>
 
           <ul className="hidden items-center gap-10 lg:flex">
@@ -93,7 +112,7 @@ export function Navbar() {
                 >
                   {link.label}
                   {pathname === link.href && (
-                    <span className="absolute -bottom-1 left-0 h-px w-full bg-champagne" />
+                    <span className="absolute -bottom-1 left-0 h-px w-full bg-olive-core" />
                   )}
                 </Link>
               </li>
@@ -103,7 +122,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="/contact"
-              className="hidden rounded-full bg-champagne px-7 py-3 text-sm font-semibold tracking-wide text-[#0b0b0b] transition-colors hover:bg-champagne-light sm:inline-flex md:text-base"
+              className="hidden rounded-full bg-olive-core px-7 py-3 text-sm font-semibold tracking-wide text-surface-01 transition-colors hover:bg-olive-dark sm:inline-flex md:text-base"
             >
               Start a Project
             </a>
@@ -143,7 +162,7 @@ export function Navbar() {
           </ul>
           <a
             href="/contact"
-            className="mt-14 rounded-full bg-champagne px-8 py-3.5 text-sm font-semibold text-[#0b0b0b]"
+            className="mt-14 rounded-full bg-olive-core px-8 py-3.5 text-sm font-semibold text-surface-01"
           >
             Start a Project
           </a>

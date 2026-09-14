@@ -43,12 +43,12 @@ export function HeroSection() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden py-28"
     >
-      {/* Dark legibility vignette over the living world */}
+      {/* Warm legibility vignette over the living world */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 58% at 50% 45%, rgba(11,11,11,0.78) 0%, rgba(11,11,11,0.34) 48%, transparent 78%)",
+            "radial-gradient(ellipse 70% 58% at 50% 45%, rgba(244,239,230,0.78) 0%, rgba(244,239,230,0.34) 48%, transparent 78%)",
         }}
       />
 
@@ -79,7 +79,7 @@ export function HeroSection() {
         <div className="hero-sub mt-10 flex flex-wrap justify-center gap-4">
           <a
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-olive-core px-10 py-4 text-base font-semibold tracking-wide text-surface-01 transition-all duration-300 hover:bg-olive-dark hover:shadow-[0_4px_32px_rgba(212,204,182,0.4)]"
+            className="inline-flex items-center justify-center rounded-full bg-olive-core px-10 py-4 text-base font-semibold tracking-wide text-surface-01 transition-all duration-300 hover:bg-olive-dark hover:shadow-[0_4px_32px_rgba(92,107,61,0.4)]"
           >
             Start a Project
           </a>
@@ -93,12 +93,12 @@ export function HeroSection() {
       </div>
 
       <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3">
-        <span className="font-body text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "rgba(212,204,182,0.55)" }}>
+        <span className="font-body text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "rgba(92,107,61,0.55)" }}>
           scroll
         </span>
         <div
           className="animate-pulse-arrow h-12 w-px"
-          style={{ background: "linear-gradient(to bottom, rgba(212,204,182,0.5), transparent)" }}
+          style={{ background: "linear-gradient(to bottom, rgba(92,107,61,0.5), transparent)" }}
         />
       </div>
     </section>

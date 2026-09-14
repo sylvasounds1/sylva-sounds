@@ -23,18 +23,26 @@ export function Footer() {
             <Link
               href="/"
               aria-label="SYLVA SOUNDS — home"
-              className="inline-flex items-center"
+              className="flex items-center gap-2.5"
               style={{ background: "transparent" }}
             >
               <Image
-                src="/logos/sylva-logo.png"
+                src="/logos/sylva-mark-on-dark.png"
                 alt="SYLVA SOUNDS"
-                width={39}
-                height={50}
+                width={32}
+                height={42}
                 loading="lazy"
-                className="site-logo-img h-12 w-auto object-contain"
+                className="h-9 w-auto object-contain md:h-10"
                 style={{ background: "transparent" }}
               />
+              <span className="flex flex-col leading-none">
+                <span className="font-display text-xl font-semibold tracking-tight text-on-dark md:text-2xl">
+                  SYLVA SOUNDS
+                </span>
+                <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.3em] text-on-dark-dim">
+                  {site.tagline}
+                </span>
+              </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-on-dark-dim">
               Music, sound design and audio post-production for film, OTT, brands, and digital media.
@@ -44,7 +52,7 @@ export function Footer() {
               {[3, 6, 4, 8, 5, 7, 4, 6, 3, 5, 7, 4].map((h, i) => (
                 <div
                   key={i}
-                  className="waveform-bar w-[3px] rounded-sm bg-champagne"
+                  className="waveform-bar w-[3px] rounded-sm bg-olive-core"
                   style={{
                     height: h * 2,
                     opacity: 0.5,

@@ -26,7 +26,7 @@ export function StatsRow() {
     <section
       ref={sectionRef}
       data-stage="sound"
-      className="veil-dark border-y border-[rgba(212,204,182,0.12)] px-6 py-14 lg:px-8"
+      className="veil-dark border-y border-[rgba(92,107,61,0.12)] px-6 py-14 lg:px-8"
     >
       <div className="studio-highlight mx-auto max-w-4xl text-center">
         <p
